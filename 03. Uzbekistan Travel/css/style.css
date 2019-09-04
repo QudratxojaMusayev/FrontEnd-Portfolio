@@ -1,0 +1,29 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-image: linear-gradient(to right, #008ecb, #009cca, #00a7b1, #00ae83, #00b047);
+}
+
+@media only screen and (max-width: 768px) {     
+    .navbar-transparent:not(.top-nav-collapse) {
+        background-color: transparent !important;
+    }
+}
+
+#intro {
+    background: url("https://cdn.pixabay.com/photo/2016/05/19/22/24/night-lights-1404130_960_720.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
