@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/32c26c6e57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Presentation</title>
+</head>
+
+<body>
+    <!-- Page 1 -->
+    <section id="page-1" class="page">
+        <h1 class="main-heading">Welcome to my presentation!</h1>
+        <p class="main-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nam, animi corporis nisi
+            itaque laboriosam
+            veniam sed id? Officia, porro autem? Recusandae, ipsa minus tenetur in saepe placeat provident. Recusandae
+            fugiat repellat sit sunt numquam. Consectetur accusamus veritatis repudiandae ipsa?
+        </p>
+        <div class="buttons">
+            <a href="#page-2" class="btn btn-light"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+    <!-- Page 2 -->
+    <section id="page-2" class="page">
+        <h1>Page 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nam, animi corporis nisi itaque laboriosam
+            veniam sed id? Officia, porro autem? Recusandae, ipsa minus tenetur in saepe placeat provident. Recusandae
+            fugiat repellat sit sunt numquam. Consectetur accusamus veritatis repudiandae ipsa?
+        </p>
+        <div class="buttons">
+            <a href="#page-1" class="btn btn-light"><i class="fas fa-chevron-up"></i></a>
+            <a href="#page-3" class="btn btn-light"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+    <!-- Page 2 -->
+    <section id="page-3" class="page">
+        <h1>Page 3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nam, animi corporis nisi itaque laboriosam
+            veniam sed id? Officia, porro autem? Recusandae, ipsa minus tenetur in saepe placeat provident. Recusandae
+            fugiat repellat sit sunt numquam. Consectetur accusamus veritatis repudiandae ipsa?
+        </p>
+        <div class="buttons">
+            <a href="#page-2" class="btn btn-light"><i class="fas fa-chevron-up"></i></a>
+            <a href="#page-4" class="btn btn-light"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+    <!-- Page 4 -->
+    <section id="page-4" class="page">
+        <h1>Page 4</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nam, animi corporis nisi itaque laboriosam
+            veniam sed id? Officia, porro autem? Recusandae, ipsa minus tenetur in saepe placeat provident. Recusandae
+            fugiat repellat sit sunt numquam. Consectetur accusamus veritatis repudiandae ipsa?
+        </p>
+        <div class="buttons">
+            <a href="#page-3" class="btn btn-light"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('.btn').on('click', function () {
+           if (this.hash !== '') {
+               event.preventDefault();
+               const hash = this.hash;
+               $('html, body').animate(
+                   {
+                       scrollTop: $(hash).offset().top
+                   },
+                   800
+               );
+           } 
+        });
+    </script>
+</body>
+
+</html>
