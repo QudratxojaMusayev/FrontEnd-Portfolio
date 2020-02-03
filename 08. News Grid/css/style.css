@@ -151,6 +151,10 @@ p {
 .p-2 {padding: 2rem;}
 .p-3 {padding: 3rem;}
 
+.l-heading {
+    font-size: 3rem;
+}
+
 .list li {
     padding: 0.5rem 0;
     border-bottom: #555 1px dotted;
@@ -279,6 +283,20 @@ p {
 
 #home-articles .articles-container > *:last-child {
     grid-column: 2 / span 2;
+}
+
+/* Article page */
+
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+}
+
+#article .meta .category {
+    margin-top: .4rem;
 }
 
 /* Footer */
